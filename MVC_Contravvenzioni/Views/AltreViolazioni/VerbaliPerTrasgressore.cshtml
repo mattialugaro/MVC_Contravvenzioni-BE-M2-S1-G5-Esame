@@ -1,0 +1,41 @@
+﻿@model IEnumerable<MVC_Contravvenzioni.Models.Persona>
+
+@{
+    ViewBag.Title = "VerbaliPerTrasgressore";
+}
+
+<h2>Verbali Per Trasgressore</h2>
+
+<p class="btn btn-success">
+    <a href="~/AltreViolazioni/Index" class="text-decoration-none text-white my-3">Torna alle Altre Violazioni</a>
+</p>
+
+<table class="table text-center">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cognome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotaleMulte)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cognome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotaleMulte)
+        </td>
+    </tr>
+}
+
+</table>

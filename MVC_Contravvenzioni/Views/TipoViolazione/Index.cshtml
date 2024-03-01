@@ -1,0 +1,47 @@
+﻿@model IEnumerable<MVC_Contravvenzioni.Models.TipoViolazione>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Trasgressioni Non Contestabili</h2>
+
+<p class="btn btn-primary">
+    <a href="~/TipoViolazione/NonContestabili" class="text-decoration-none text-white mt-3">Trasgressioni Contestabili</a>
+</p>
+
+<table class="table text-center">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IDViolazione)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descrizione)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IDAnagrafica)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contestabile)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IDViolazione)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descrizione)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IDAnagrafica)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contestabile)
+        </td>
+    </tr>
+}
+
+</table>

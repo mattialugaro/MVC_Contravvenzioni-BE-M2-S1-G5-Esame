@@ -1,0 +1,64 @@
+﻿@model IEnumerable<MVC_Contravvenzioni.Models.Verbale>
+
+@{
+    ViewBag.Title = "MulteSalate";
+}
+
+<h2>Multe Salate</h2>
+
+<p class="btn btn-success">
+    <a href="~/AltreViolazioni/Index" class="text-decoration-none text-white my-3">Torna alle Altre Violazioni</a>
+</p>
+
+<table class="table text-center">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IDVerbale)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataViolazione)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IndirizzoViolazione)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NominativoAgente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataTrascrizioneVerbale)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Importo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DecurtamentoPunti)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IDVerbale)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataViolazione)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IndirizzoViolazione)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NominativoAgente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataTrascrizioneVerbale)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Importo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DecurtamentoPunti)
+        </td>
+    </tr>
+}
+
+</table>

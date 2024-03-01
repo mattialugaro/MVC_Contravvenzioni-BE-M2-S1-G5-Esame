@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<main>
+    <h2>Index</h2>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-3">
+                <div class="card" width="325px" height="345px">
+                    <img src="~/Content/img/trasgressori.jpg" class="card-img-top" width="300px" height="185px" alt="Verbali per Trasgressore">
+                    <div class="card-body">
+                        <p class="card-text">Sezione per visualizzare il totale dei verbali trascritti raggruppati per trasgressore</p>
+                        <a href="~/AltreViolazioni/VerbaliPerTrasgressore" class="btn btn-success">Totale Verbali per Trasgressore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" width="325px" height="345px">
+                    <img src="~/Content/img/punti.jpg" class="card-img-top" width="300px" height="185px" alt="Punti per Trasgressore">
+                    <div class="card-body">
+                        <p class="card-text">Sezione per visualizzare il totale dei punti decurtati raggruppati per trasgressore</p>
+                        <a href="~/AltreViolazioni/PuntiDecurtatiPerTrasgressore" class="btn btn-primary">Totale Punti per Trasgressore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" width="325px" height="345px">
+                    <img src="~/Content/img/nonContestabili.jpeg" class="card-img-top" width="300px" height="185px" alt="Violazioni Importanti">
+                    <div class="card-body">
+                        <p class="card-text">Sezione per visualizzare le trasgressioni che superano i 10 punti decurtati</p>
+                        <a href="~/AltreViolazioni/ViolazioniImportanti" class="btn btn-success">Violazioni Importanti</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" width="325px" height="345px">
+                    <img src="~/Content/img/400.jpg" class="card-img-top" width="300px" height="185px" alt="Multe Salate">
+                    <div class="card-body">
+                        <p class="card-text">Sezione per visualizzare le violazioni il cui importo è maggiore di 400 euro.</p>
+                        <a href="~/AltreViolazioni/MulteSalate" class="btn btn-primary">Multe Salate</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+

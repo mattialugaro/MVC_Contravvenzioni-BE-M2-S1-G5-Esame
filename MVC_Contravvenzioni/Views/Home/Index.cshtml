@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <h1>Polizia Municipale</h1>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-3">
+                <div class="card" width="325px" height="480px">
+                    <img src="~/Content/img/elencoTrasgressori.jpg" class="card-img-top" width="180px" height="300px" alt="Elenco Trasgressori">
+                    <div class="card-body">
+                        <p class="card-text">Sezione che consente di anagrafare i trasgressori</p>
+                        <a href="~/Persona/Create" class="btn btn-success">Aggiungi Trasgressore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" width="325px" height="480px">
+                    <img src="~/Content/img/contestabile.jpg" class="card-img-top" width="180px" height="300px"  alt="Violazioni Contestabili">
+                    <div class="card-body">
+                        <p class="card-text">Sezione che consente di avere l’elenco delle violazioni che è possibile contestare</p>
+                        <a href="~/TipoViolazione/Index" class="btn btn-primary">Elenco Violazioni Contestabili</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" width="325px" height="480px">
+                    <img src="~/Content/img/verbale.jpg" class="card-img-top" width="180px" height="300px"  alt="Elenco Verbali">
+                    <div class="card-body">
+                        <p class="card-text">Sezione per la compilazione del verbale</p>
+                        <a href="~/Verbale/Create" class="btn btn-success">Aggiungi Verbale</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" width="325px" height="480px">
+                    <img src="~/Content/img/altreContravvenzioni.jpg" class="card-img-top" width="180px" height="300px"  alt="Altre Violazioni">
+                    <div class="card-body">
+                        <p class="card-text">Sezione altre Violazioni</p>
+                        <a href="~/AltreViolazioni/Index" class="btn btn-primary">Altre Violazioni</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
